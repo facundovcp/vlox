@@ -1,0 +1,82 @@
+.user-card-container {
+    height: 100%;
+    width: 100%;
+}
+
+.user-card-top {
+    /* background-color: darkgrey; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 40%;
+}
+
+.profile-picture-circle {
+    margin-bottom: -30px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: rgba(29, 35, 51, 1);
+    border: 12px solid rgba(29, 35, 51, 1);
+    /* hardcoded demo */
+    background-image: url('../../../assets/imgs/profile2.png');
+    background-size: cover;
+}
+
+.user-card-bottom {
+    padding-top: 35px;
+    height: 55%;
+    background-color: rgba(29, 35, 51, 0.9);
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.user-info-row {
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+}
+
+.user-name-label {
+    display: grid;
+    text-align: end;
+    width: 60%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.user-level-label {
+    display: grid;
+    text-align: start;
+    padding-left: 10px;
+    width: 40%;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.user-health {
+    text-align: center;
+    width: 100%;
+}
+
+.user-stats {
+    display: -ms-inline-grid;
+    width: 100%;
+}
+
+.upvotes {
+    width: 50%;
+}
+
+.downvotes {
+    width: 50%;
+}
+
+.user-experience {
+    text-align: center;
+}

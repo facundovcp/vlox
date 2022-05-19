@@ -1,0 +1,24 @@
+.navbar-container {
+    background-color: rgba(29, 35, 51, 0.9);
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.left-padding {
+    order: 1;
+    flex-grow: 1;
+}
+
+.routes-container {
+    order: 2;
+    flex-grow: 2;
+}
+
+
+.right-padding {
+    order: 3;
+    flex-grow: 1 !important;
+}

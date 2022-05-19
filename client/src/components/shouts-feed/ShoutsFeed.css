@@ -1,0 +1,24 @@
+.shouts-feed-container {
+    height: 100%;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    width: 100%;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.shouts-feed-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #0d1217;
+}
+
+.shouts-feed-container::-webkit-scrollbar {
+    width: 10px;
+    background-color: #0d1217;
+}
+
+.shouts-feed-container::-webkit-scrollbar-thumb {
+    background-color: rgba(29, 35, 51, 0.9);
+    border: 2px solid rgba(29, 35, 51, 0.9);
+}

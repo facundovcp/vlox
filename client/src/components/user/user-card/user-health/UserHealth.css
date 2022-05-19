@@ -1,0 +1,15 @@
+.hearth-icon {
+    width: 30px;
+    height: 30px;
+    /* hardcoded demo */
+    background-image: url('../../../../assets/imgs/fullhearth.png');
+    background-size: cover;
+}
+
+.user-hearts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
