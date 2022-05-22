@@ -1,0 +1,212 @@
+.login-form-container {
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.auth-form {
+    color: white;
+    font-size: 16px;
+    height: 50%;
+    text-align: center;
+}
+
+.register-form {
+    font-size: 16px;
+    color: white;
+    height: 50%;
+    text-align: center;
+}
+
+.auth-inputs-container {
+    display: flex;
+    height: 50%;
+}
+
+.username-container {
+    width: 50%;
+    height: 100%;
+}
+
+.password-container {
+    width: 50%;
+    height: 100%;
+}
+
+
+.field__input {
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, white);
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: inherit;
+    font-size: 15px;
+    color: white;
+}
+
+.field__input:focus::-webkit-input-placeholder {
+    color: var(--uiFieldPlaceholderColor);
+}
+
+.field__input:focus::-moz-placeholder {
+    color: var(--uiFieldPlaceholderColor);
+}
+
+.field {
+    height: 80%;
+    --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+    --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
+    --uiFieldBorderColorActive: var(--fieldBorderColorActive, rgba(22, 22, 22, 1));
+
+    display: var(--fieldDisplay, inline-flex);
+    position: relative;
+    font-size: var(--fieldFontSize, 1rem);
+}
+
+.field__input {
+    box-sizing: border-box;
+    width: var(--fieldWidth, 100%);
+    height: var(90%, 3rem);
+    padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
+    border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));
+}
+
+.field__input:focus {
+    outline: none;
+}
+
+.field__input::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.field__input::-moz-placeholder {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.field__input:focus::-webkit-input-placeholder {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.field__input:focus::-moz-placeholder {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.field__label-wrap {
+    box-sizing: border-box;
+    pointer-events: none;
+    cursor: text;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.field__label-wrap::after {
+    content: "";
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.field__input:focus~.field__label-wrap::after {
+    opacity: 1;
+}
+
+.field__label {
+    /* position: absolute; */
+    left: var(--uiFieldPaddingLeft);
+    top: calc(70% - 3em);
+    line-height: 1;
+    font-size: 12px;
+    transition: top .2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity .2s ease-out, font-size .2s ease-out;
+    will-change: bottom, opacity, font-size;
+}
+
+.field__input:focus~.field__label-wrap .field__label,
+.field__input:not(:placeholder-shown)~.field__label-wrap .field__label {
+    --fieldHintFontSize: var(--fieldHintFontSizeFocused, .75rem);
+
+    top: var(--fieldHintTopHover, .25rem);
+}
+
+/* 
+effect 2
+*/
+
+.field_v2 .field__label-wrap {
+    overflow: hidden;
+}
+
+.field_v2 .field__label-wrap::after {
+    border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+    transform: translate3d(-105%, 0, 0);
+    will-change: transform, opacity;
+    transition: transform .285s ease-out .2s, opacity .2s ease-out .2s;
+}
+
+.field_v2 .field__input:focus~.field__label-wrap::after {
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0;
+}
+
+/*
+=====
+LEVEL 4. SETTINGS
+=====
+*/
+
+.field {
+    --fieldBorderColor: white;
+    --fieldBorderColorActive: #ff003c;
+}
+
+
+.btn-login {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border-bottom: darkgrey 2px solid;
+    border-left: rgba(0, 0, 0, 0.2) 1px solid;
+    border-right: rgba(0, 0, 0, 0.2) 1px solid;
+    border-top: rgba(0, 0, 0, 0.2) 1px solid;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-login:hover {
+    border-bottom: #ff003c 2px solid;
+}
+
+
+/* Registro */
+
+.btn-signup {
+    cursor: pointer;
+    margin-top: 18px;
+    display: block;
+    font-size: 45px;
+    font-family: "VT323", monospace;
+    text-shadow: -0.055em 0.035em 0.15rem #1ba5a5,
+        0.055em -0.055em 0.15rem #c013b4;
+    text-align: center;
+    color: white;
+}

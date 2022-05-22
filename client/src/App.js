@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/home-page/HomePage";
-import Login from "./pages/Login";
+import Login from "./pages/login-page/Login.jsx";
 import ShoutsPage from "./pages/ShoutsPage";
 import ProfilePage from "./pages/ProfilePage";
-import NavBar from "./components/nav-bar/NavBar";
 import "./styles.css";
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </div>
-      <NavBar></NavBar>
     </>
   );
 };

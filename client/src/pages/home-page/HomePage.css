@@ -1,5 +1,5 @@
 .home-container {
-    height: 100%;
+    height: calc(100% - 50px);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -7,14 +7,11 @@
     grid-template-rows: auto;
 }
 
-.home-container div {
-    /* line-height: 75px; */
-}
 
 .left-padding {
     order: 1;
-    flex-grow: 3;
-    flex-shrink: 3;
+    flex-grow: 10;
+    flex-shrink: 10;
 }
 
 
@@ -38,14 +35,14 @@
 
 .right-padding {
     order: 5 !important;
-    flex-grow: 3 !important;
-    flex-shrink: 3 !important;
+    flex-grow: 10 !important;
+    flex-shrink: 10 !important;
 }
 
 .right-container-top {
     padding: 20px;
     width: 90%;
-    height: 30%;
+    height: 35%;
 }
 
 .right-container-bottom {
