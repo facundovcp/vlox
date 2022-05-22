@@ -17,7 +17,7 @@ export default function LoginForm() {
                     </div>
                     <div className="password-container">
                         <label class="field field_v2">
-                            <input class="field__input" placeholder="" />
+                            <input class="field__input" placeholder="" type='password' />
                             <span class="field__label-wrap">
                                 <span class="field__label">Contraseña</span>
                             </span>
