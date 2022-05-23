@@ -1,6 +1,6 @@
 import React from 'react'
 import "./LoginForm.css";
-
+import { Link } from 'react-router-dom';
 
 export default function LoginForm() {
     return (
@@ -27,8 +27,8 @@ export default function LoginForm() {
                 <button className="btn-login">Ingresar</button>
             </div>
             <div className="register-form">
-                <span>¿No tenés cuenta?</span>
-                <span className="btn-signup">Registro</span>
+                <span className="question-label">¿No tenés cuenta?</span>
+                <Link className="btn-signup" to="/registro">Registro</Link>
             </div>
         </div>
     )

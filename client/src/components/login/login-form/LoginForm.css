@@ -128,11 +128,13 @@
 }
 
 .field__label {
+    letter-spacing: 2px;
+    font-family: "VT323", monospace;
     /* position: absolute; */
     left: var(--uiFieldPaddingLeft);
     top: calc(70% - 3em);
     line-height: 1;
-    font-size: 12px;
+    font-size: 14px;
     transition: top .2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity .2s ease-out, font-size .2s ease-out;
     will-change: bottom, opacity, font-size;
 }
@@ -177,8 +179,9 @@ LEVEL 4. SETTINGS
 
 
 .btn-login {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "VT323", monospace;
+    font-size: 18px;
     border-bottom: darkgrey 2px solid;
     border-left: rgba(0, 0, 0, 0.2) 1px solid;
     border-right: rgba(0, 0, 0, 0.2) 1px solid;
@@ -190,6 +193,11 @@ LEVEL 4. SETTINGS
     box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
     padding: 5px 20px;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.question-label {
+    font-family: "VT323", monospace;
+    font-size: 18px;
 }
 
 .btn-login:hover {
