@@ -21,7 +21,7 @@ export default function Loading() {
                 </div>
             </div>
             <div className="loading-tip">
-                <span>El registro puede llevar algunos minutos, pero proporciona información necesaria. </span>
+                <span>El registro puede llevar algunos minutos, ya que proporciona información necesaria. </span>
             </div>
         </div>
     )

@@ -1,10 +1,3 @@
-.signup-info-container {
-    width: 100%;
-    height: 100%;
-    // text-align: center;
-    font-family: "VT323", monospace;
-}
-
 $foreground: #dbd8c5;
 $background: #0b0909;
 
@@ -107,14 +100,125 @@ $body-stack: "Share Tech Mono", monospace;
     color: $background;
 }
 
-// body {
-//     background: $background;
-//     color: $foreground;
-//     padding: 5rem 0;
-//     width: 85vw;
-//     margin: 0 auto;
-//     font-size: 1.25rem;
-// }
+.signup-info-container {
+    width: 100%;
+    height: 100%;
+    // text-align: center;
+    font-family: "VT323", monospace;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.first-page-container {
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+.first-page-body {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 160px);
+}
+
+.first-page-body-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    width: calc(50% - 20px);
+    height: 100%;
+    max-height: calc(100vh - 1px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.first-page-body-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    width: 50%;
+    height: 100%;
+    max-height: calc(100vh - 1px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 20px;
+}
+
+.first-page-body-2-top {
+    width: 100%;
+    height: 40%;
+}
+
+.first-page-body-2-bottom {
+    width: 100%;
+    height: 60%;
+}
+
+.first-page-footer {
+    display: flex;
+    font-size: 12px !important;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-arrow-footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.first-page-header {
+    width: 100%;
+    height: 100px;
+}
+
+.second-page-container {
+    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
+}
+
+.third-page-container {
+    scroll-snap-align: start;
+    height: 100%;
+    width: 100%;
+}
+
+.horizontal-line-to-form {
+    width: 50%;
+    height: 50%;
+    border-image: $rainbow 20;
+    border-bottom: 3px solid;
+}
+
+.vertical-line-to-form {
+    width: 50%;
+    height: 50%;
+    border-image: $rainbow 20;
+    border-right: 3px solid;
+}
+
+.form-container {
+    width: 90%;
+    height: 90%;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    // border-image: $rainbow 20;
+    // border-top: 3px solid;
+    // border-bottom: 3px solid;
+    // border-right: 3px solid;
+    // border-left: 3px solid;
+}
+
 
 .signup-info-title {
     margin-bottom: 10px;
@@ -133,6 +237,25 @@ $body-stack: "Share Tech Mono", monospace;
     border-image-width: 0 0 0.25rem;
 }
 
+.expl-body {
+    font-family: $body-stack;
+    font-size: 13px;
+    text-align: justify;
+
+    @media screen and (min-width: 1900px) {
+        font-family: $body-stack;
+        font-size: 17px;
+        text-align: justify;
+    }
+}
+
+
+.footer-text {
+    font-family: $body-stack;
+    font-size: 13px;
+    text-align: center;
+}
+
 .multi-label {
     padding-left: calc(50% - 96px) !important;
     padding-right: calc(50% - 96px) !important;
@@ -149,7 +272,7 @@ $body-stack: "Share Tech Mono", monospace;
 
 .what-is-title {
     margin-top: 10px;
-    height: auto;
+    height: 50px;
     font-size: 50px;
     color: white;
     text-align: center;
@@ -157,7 +280,7 @@ $body-stack: "Share Tech Mono", monospace;
 
 .what-is-container {
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     margin-top: 10px !important;
     width: 100%;
     height: auto;
@@ -181,50 +304,69 @@ $body-stack: "Share Tech Mono", monospace;
 }
 
 .what-ill-found-container {
-    padding-left: 50px;
-    padding-right: 50px;
-    width: calc(100% - 100px);
-    height: auto;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    width: 100%;
+    height: calc(100% - 50px);
 }
 
 .icon-expl-container {
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
 .text-expl-container {
     font-size: 20px;
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    height: calc(100% - 50px);
 }
 
 .content-expl-container {
-    // border: 0.25rem solid;
-    // background-color: $black;
     border-image: $rainbow 20;
     border-top: 3px solid;
     border-right: 3px solid;
     color: $white;
-    height: auto;
+    height: 50%;
     padding: 2rem 3rem;
     font-size: 1.125rem;
     display: flex;
     text-align: justify
 }
 
+
 .content-expl-container-reverse {
-    // border: 0.25rem solid;
-    // background-color: $black;
+    display: flex;
     border-image: $rainbow 20;
     border-top: 3px solid;
     border-left: 3px solid;
     // border-bottom: 3px solid;
     color: $white;
-    height: auto;
+    height: calc(50% - 90px);
     padding: 2rem 3rem;
     font-size: 1.125rem;
     text-align: justify
 }
+
+.content-expl-container-last-row {
+    border-image: $rainbow 20;
+    border-top: 3px solid;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    color: $white;
+    height: calc(50% - 90px);
+    padding: 2rem 3rem;
+    font-size: 1.125rem;
+    display: flex;
+    text-align: justify
+}
+
+.expl-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    // text-decoration: underline #ff003c 2px;
+}
+
 
 
 // h3 {
@@ -287,36 +429,52 @@ $body-stack: "Share Tech Mono", monospace;
 //     }
 // }
 
-// strong,
 // em,
 // q,
 // i,
 // code {
-//     @include block-glow($senary);
-//     text-transform: uppercase;
-//     font-weight: 400;
+strong {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    @include block-glow($senary);
+    text-transform: uppercase;
+    font-weight: 400;
 
-//     &.cyan {
-//         @include block-glow($cyan);
-//         animation: none;
-//     }
+    &.cyan {
+        @include block-glow($cyan);
+        animation: none;
+    }
 
-//     &.magenta {
-//         @include block-glow($magenta);
-//         animation: none;
-//     }
+    &.magenta {
+        @include block-glow($magenta);
+        animation: none;
+    }
 
-//     &.yellow {
-//         @include block-glow($yellow);
-//         animation: none;
-//     }
+    &.yellow {
+        @include block-glow($yellow);
+        animation: none;
+    }
 
-//     &.black {
-//         @include block-glow($foreground);
-//         animation: none;
-//         color: $background;
-//     }
-// }
+    &.black {
+        @include block-glow($foreground);
+        animation: none;
+        color: $background;
+    }
+
+    &.quaternary {
+        @include block-glow($quaternary);
+        animation: none;
+        color: $background;
+    }
+}
+
+.version-footer {
+    height: 40px;
+    width: 100%;
+    // background-color: pink;
+    display: block;
+}
 
 // em,
 // i {

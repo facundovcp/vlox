@@ -1,6 +1,8 @@
 .register-container {
     width: 100%;
     height: 100%;
+    max-height: calc(100% -1px);
+    overflow-y: auto;
     display: flex;
     /* background-color: black; */
 }
@@ -13,13 +15,13 @@
 .left-register-container {
     position: relative;
     height: 100%;
-    width: 20%;
+    width: 5%;
 }
 
 .middle-register-container {
     position: relative;
     height: 100%;
-    width: 60%;
+    width: 100%;
 }
 
 .register-info-container {
@@ -37,7 +39,7 @@
 .right-register-container {
     position: relative;
     height: 100%;
-    width: 20%;
+    width: 5%;
 }
 
 .register-form-signup {

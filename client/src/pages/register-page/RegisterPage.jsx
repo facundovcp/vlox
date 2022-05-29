@@ -26,13 +26,8 @@ export default function RegisterPage() {
                         <Loading></Loading>
                     </div>
                     : <div className="register-container">
-                        <div className="left-register-container">
-                        </div>
                         <div className="middle-register-container">
                             <SignUpInfo></SignUpInfo>
-                        </div>
-                        <div className="right-register-container">
-                            {/* <div className="register-form-signup"></div> */}
                         </div>
                     </div>
             }
