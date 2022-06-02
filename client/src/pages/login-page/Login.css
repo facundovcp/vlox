@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     display: grid;
-    background-image: url('../../assets/imgs/homebackground5.jpg');
+    background-image: url('../../assets/imgs/homebackground8.png');
     background-size: cover;
     position: relative;
 }
@@ -39,7 +39,7 @@
     z-index: 10;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .logo-container {

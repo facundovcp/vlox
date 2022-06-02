@@ -1,5 +1,5 @@
 .background-image-home {
-    background-image: url(../../assets/imgs/homebackground8.png);
+    background-image: url(../../assets/imgs/homebackground5.jpg);
     background-size: cover;
     height: calc(100% - 50px);
     width: 100%;
@@ -9,7 +9,7 @@
 }
 
 .miss-color-background {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
     /* background-color: rgba(0, 0, 0, 0.9); */
     height: 100%;
     width: 100%;
