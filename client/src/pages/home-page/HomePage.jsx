@@ -6,36 +6,51 @@ import UserCard from "../../components/user/user-card/UserCard";
 import Rank from "../../components/rank/Rank";
 import PageStats from "../../components/page-stats/PageStats";
 import NavBar from "../..//components/nav-bar/NavBar";
+import Fade from 'react-reveal/Fade';
 
 export default function HomePage() {
   return (
     <>
-      <div className="home-container">
-        <div className="left-padding"></div>
-        <div className="left-container">
-          <PostFeed></PostFeed>
-        </div>
-        <div className="center-container">
-          <ShoutsFeed></ShoutsFeed>
-        </div>
-        <div className="right-container">
-          <div className="right-container-top">
-            <div className="right-container-top-card">
-              <UserCard></UserCard>
+      <div className="background-image-home">
+        <div className="miss-color-background">
+          <div className="home-container">
+            <div className="left-padding"></div>
+            <div className="left-container">
+              {/* <Fade left> */}
+              <PostFeed></PostFeed>
+              {/* </Fade> */}
             </div>
+            <div className="center-container">
+              <Fade top>
+                <ShoutsFeed></ShoutsFeed>
+              </Fade>
+            </div>
+            <div className="right-container">
+              <div className="right-container-top">
+                <div className="right-container-top-card">
+                  <UserCard></UserCard>
+                </div>
+              </div>
+              <div className="right-container-bottom">
+                <div className="rank-home">
+                  {/* <Fade right> */}
+                  <Rank></Rank>
+                  {/* </Fade> */}
+                </div>
+                <div className="page-stats-home">
+                  {/* <Fade right> */}
+                  <PageStats></PageStats>
+                  {/* </Fade> */}
+                </div>
+              </div>
+            </div>
+            <div className="right-padding"></div>
           </div>
-          <div className="right-container-bottom">
-            <div className="rank-home">
-              <Rank></Rank>
-            </div>
-            <div className="page-stats-home">
-              <PageStats></PageStats>
-            </div>
-          </div>
         </div>
-        <div className="right-padding"></div>
       </div>
-      <NavBar></NavBar>
+      <Fade bottom>
+        <NavBar></NavBar>
+      </Fade>
     </>
 
   );

@@ -1,4 +1,27 @@
+.background-image-home {
+    background-image: url(../../assets/imgs/homebackground8.png);
+    background-size: cover;
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    position: relative;
+}
+
+.miss-color-background {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    position: relative;
+}
+
 .home-container {
+    position: relative;
+    /* background-image: url(../../assets/imgs/homebackground.png); */
+    z-index: 999;
     height: calc(100% - 50px);
     width: 100%;
     display: flex;
