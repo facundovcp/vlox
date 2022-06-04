@@ -1,51 +1,39 @@
 import React from 'react'
 import "./SignUpInfo.scss";
 import { Link } from 'react-router-dom';
-import Pulse from 'react-reveal/Pulse';
-import Reveal from 'react-reveal/Reveal';
-import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 import { FaChevronDown } from "react-icons/fa";
 
 
 export default function SignUpInfo() {
     return (
-        <div className="signup-info-container">
-            <div className="first-page-container">
-                <div className="first-page-header">
-                    <span className="signup-info-title">Registro</span>
-                    <span className="multi-label">¡Bienvenido!</span>
-                </div>
-                <div className="first-page-body">
-                    <Fade left>
+        <>
+            <div className="signup-info-container">
+                <div className="first-page-container">
+                    <div className="first-page-header">
+                        <span className="signup-info-title">Registro</span>
+                        <span className="multi-label">¡Bienvenido!</span>
+                    </div>
+                    <div className="first-page-body">
                         <div className="first-page-body-1">
-                            <Pulse>
-                                <div className="what-is-title">
-                                    <span>¿Qué es VLOX?</span>
-                                </div>
-                            </Pulse>
+                            <div className="what-is-title">
+                                <span>¿Qué es VLOX?</span>
+                            </div>
                             <div className="what-is-container">
-                                <Reveal effect="fadeInUp">
-                                    <p className="expl-body">VLOX es un espacio para compartir información, media, memes, conectarte con personas que compartan tus intereses y
-                                        descubrir contenido de calidad creado por diferentes usuarios de la comunidad.
-                                        Consideramos que la libre expresión respetando a todos los miembros es el pilar fundamental de nuestra plataforma.
-                                        El sitio posee reglas básicas para toda la comunidad que nos permitirán mantener un buen clima potenciando
-                                        la creatividad y la interacción entre nuestros usuarios. El sitio está apuntado al público hispano.</p>
+                                <p className="expl-body">VLOX es un espacio para compartir información, media, memes, conectarte con personas que compartan tus intereses y
+                                    descubrir contenido de calidad creado por diferentes usuarios de la comunidad.
+                                    Consideramos que la libre expresión respetando a todos los miembros es el pilar fundamental de nuestra plataforma.
+                                    El sitio posee reglas básicas para toda la comunidad que nos permitirán mantener un buen clima potenciando
+                                    la creatividad y la interacción entre nuestros usuarios. El sitio está apuntado al público hispano.</p>
 
-                                </Reveal>
                             </div>
 
-                            <Pulse>
-                                <div className="what-is-title">
-                                    <span>Acerca de la comunidad</span>
-                                </div>
-                            </Pulse>
+                            <div className="what-is-title">
+                                <span>Acerca de la comunidad</span>
+                            </div>
                             <div className="what-is-container">
-                                <Reveal effect="fadeInUp">
-                                    <p className="expl-body"> Tanto la comunidad como su opinion sobre la página, son aspectos que creemos fundamentales y tendrán total seguimiento. Por ello, la administración estará en contacto con la misma en fin de escuchar sus sugerencias/ideas para el futuro de la página.<br></br>
-                                        ¿Cómo será ésto? A través de encuestas/votaciones se iran tomando las decisiones mas improtantes de la plataforma, siempre creando un espacio para hablar sobre el cambio del sitio donde todas las opinones serán tomadas en cuenta.</p>
+                                <p className="expl-body"> Tanto la comunidad como su opinion sobre la página, son aspectos que creemos fundamentales y tendrán total seguimiento. Por ello, la administración estará en contacto con la misma en fin de escuchar sus sugerencias/ideas para el futuro de la página.<br></br>
+                                    ¿Cómo será ésto? A través de encuestas/votaciones se iran tomando las decisiones mas improtantes de la plataforma, siempre creando un espacio para hablar sobre el cambio del sitio donde todas las opinones serán tomadas en cuenta.</p>
 
-                                </Reveal>
                             </div>
 
                             <div className="rules-container">
@@ -55,33 +43,27 @@ export default function SignUpInfo() {
                                 <Link className="btn-rules" to="/termcond" target="_blank">Revisar los Términos y Condiciones</Link>
                             </div>
                         </div>
-                    </Fade>
-                    <div className="first-page-body-2">
-                        <div className="first-page-body-2-bottom">
-                            <Fade right>
+                        <div className="first-page-body-2">
+                            <div className="first-page-body-2-bottom">
                                 <div className="form-container"></div>
-                            </Fade>
+                            </div>
                         </div>
-                    </div>
-                    {/* <div className="rules-container">
+                        {/* <div className="rules-container">
                 <input type="checkbox" id="checkbox" />
                 <label className="vlox-checkbox" for="checkbox" ><span class="ui"></span>Acepto respetar las Reglas, los Términos y  las Condiciones.</label>
             </div> */}
-                </div>
-                <div className="first-page-footer">
-                    <Fade bottom>
+                    </div>
+                    <div className="first-page-footer">
                         <FaChevronDown className="down-arrow-footer"></FaChevronDown><p className="footer-text">Aconsejamos a los nuevos a leer acerca de las funcionalidades del sitio</p><FaChevronDown className="down-arrow-footer"></FaChevronDown>
-                    </Fade>
+                    </div>
                 </div>
-            </div>
-            <div className="second-page-container">
-                <div className="what-is-title">
-                    <span>¿Qué encontraré en VLOX?</span>
-                </div>
-                <div className="what-ill-found-container">
-                    <div className="content-expl-container">
-                        <div className="icon-expl-container"></div>
-                        <Slide left>
+                <div className="second-page-container">
+                    <div className="what-is-title">
+                        <span>¿Qué encontraré en VLOX?</span>
+                    </div>
+                    <div className="what-ill-found-container">
+                        <div className="content-expl-container">
+                            <div className="icon-expl-container"></div>
                             <div className="text-expl-container">
                                 <p className="expl-title">Contenidos</p>
                                 <p className="expl-body">Los contenidos publicados en la página seran mediante <strong class="cyan">Posts</strong> o <strong class="magenta">Shouts</strong>. El primero
@@ -96,10 +78,8 @@ export default function SignUpInfo() {
                                     El contenido diario que los usuarios puedan subir será limitado, evitando así spam y shitposting.
                                 </p>
                             </div>
-                        </Slide>
-                    </div>
-                    <div className="content-expl-container-last-row">
-                        <Slide right>
+                        </div>
+                        <div className="content-expl-container-last-row">
                             <div className="text-expl-container">
                                 <p className="expl-title">Gamification</p>
                                 <p className="expl-body">
@@ -112,15 +92,13 @@ export default function SignUpInfo() {
                                 </p>
                                 <Link className="btn-rules" to="/termcond" target="_blank">Gamification en VLOX</Link>
                             </div>
-                        </Slide>
-                        <div className="icon-expl-container"></div>
+                            <div className="icon-expl-container"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="third-page-container">
-                <div className="content-expl-container">
-                    <div className="icon-expl-container"></div>
-                    <Slide left>
+                <div className="third-page-container">
+                    <div className="content-expl-container">
+                        <div className="icon-expl-container"></div>
                         <div className="text-expl-container">
                             <p className="expl-title">Premios</p>
                             <p className="expl-body">
@@ -130,10 +108,8 @@ export default function SignUpInfo() {
                             </p>
                             <p className="expl-body">Así mismo existe el Top Anual y Ranking de Niveles que también otorgarán recompensas.</p>
                         </div>
-                    </Slide>
-                </div>
-                <div className="content-expl-container-last-row">
-                    <Slide right>
+                    </div>
+                    <div className="content-expl-container-last-row">
                         <div className="text-expl-container">
                             <p className="expl-title">Web 3.0 - Apostamos al futuro</p>
                             <p className="expl-body">
@@ -145,14 +121,14 @@ export default function SignUpInfo() {
                                 Además, una guía sobre cómo crear una Wallet personal de manera rápida y vincularla a la cuenta se encontrará disponible.
                             </p>
                         </div>
-                    </Slide>
-                    <div className="icon-expl-container"></div>
+                        <div className="icon-expl-container"></div>
+                    </div>
                 </div>
-            </div>
-            {/* 
+                {/* 
                 <div className="version-footer"></div>
             </div> */}
-        </div>
+            </div>
+        </>
     )
 }
 

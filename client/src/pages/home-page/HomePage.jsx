@@ -6,7 +6,6 @@ import UserCard from "../../components/user/user-card/UserCard";
 import Rank from "../../components/rank/Rank";
 import PageStats from "../../components/page-stats/PageStats";
 import NavBar from "../..//components/nav-bar/NavBar";
-import Fade from 'react-reveal/Fade';
 
 export default function HomePage() {
   return (
@@ -16,16 +15,12 @@ export default function HomePage() {
           <div className="home-container">
             <div className="left-padding"></div>
             <div className="left-container">
-              {/* <Fade left> */}
               <PostFeed></PostFeed>
-              {/* </Fade> */}
             </div>
             <div className="center-container">
-              <Fade top>
-                <ShoutsFeed></ShoutsFeed>
-              </Fade>
+              <ShoutsFeed></ShoutsFeed>
             </div>
-            <div className="right-container">
+            {/* <div className="right-container">
               <div className="right-container-top">
                 <div className="right-container-top-card">
                   <UserCard></UserCard>
@@ -33,24 +28,18 @@ export default function HomePage() {
               </div>
               <div className="right-container-bottom">
                 <div className="rank-home">
-                  {/* <Fade right> */}
                   <Rank></Rank>
-                  {/* </Fade> */}
                 </div>
                 <div className="page-stats-home">
-                  {/* <Fade right> */}
                   <PageStats></PageStats>
-                  {/* </Fade> */}
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="right-padding"></div>
           </div>
         </div>
       </div>
-      <Fade bottom>
-        <NavBar></NavBar>
-      </Fade>
+      <NavBar></NavBar>
     </>
 
   );

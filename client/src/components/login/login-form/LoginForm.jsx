@@ -1,38 +1,35 @@
 import React from 'react'
 import "./LoginForm.css";
 import { Link } from 'react-router-dom';
-import Fade from 'react-reveal/Fade';
 
 export default function LoginForm() {
     return (
-        <Fade bottom>
-            <div className="login-form-container">
-                <div className="auth-form">
-                    <div className="auth-inputs-container">
-                        <div className="username-container">
-                            <label class="field field_v2">
-                                <input class="field__input" placeholder="" />
-                                <span class="field__label-wrap">
-                                    <span class="field__label">Usuario</span>
-                                </span>
-                            </label>
-                        </div>
-                        <div className="password-container">
-                            <label class="field field_v2">
-                                <input class="field__input" placeholder="" type='password' />
-                                <span class="field__label-wrap">
-                                    <span class="field__label">Contraseña</span>
-                                </span>
-                            </label>
-                        </div>
+        <div className="login-form-container">
+            <div className="auth-form">
+                <div className="auth-inputs-container">
+                    <div className="username-container">
+                        <label class="field field_v2">
+                            <input class="field__input" placeholder="" />
+                            <span class="field__label-wrap">
+                                <span class="field__label">Usuario</span>
+                            </span>
+                        </label>
                     </div>
-                    <button className="btn-login">Ingresar</button>
+                    <div className="password-container">
+                        <label class="field field_v2">
+                            <input class="field__input" placeholder="" type='password' />
+                            <span class="field__label-wrap">
+                                <span class="field__label">Contraseña</span>
+                            </span>
+                        </label>
+                    </div>
                 </div>
-                <div className="register-form">
-                    <span className="question-label">¿No tenés cuenta?</span>
-                    <Link className="btn-signup" to="/registro">Registro</Link>
-                </div>
+                <button className="btn-login">Ingresar</button>
             </div>
-        </Fade>
+            <div className="register-form">
+                <span className="question-label">¿No tenés cuenta?</span>
+                <Link className="btn-signup" to="/registro">Registro</Link>
+            </div>
+        </div>
     )
 }
