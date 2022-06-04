@@ -3,7 +3,6 @@ import "./SignUpInfo.scss";
 import { Link } from 'react-router-dom';
 import { FaChevronDown } from "react-icons/fa";
 
-
 export default function SignUpInfo() {
     return (
         <>
